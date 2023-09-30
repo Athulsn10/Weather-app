@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body style="background-image: url('img/bg.jpeg'); background-size: cover;">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col">    
+            <h1 class="text-light pt-5 ps-5">WEATHER</h1>
+            <div id="data" class="ps-5">
+                <p class="text-light py-0" id="temperature"></p>
+                <p class="text-light py-0" id="feel"></p>
+                <p class="text-light py-0" id="location"></p>
+                <p class="text-light py-0" id="timezone"></p>
+            </div>
+    <div class="container-fluid">
+    </div>
+    </div>
+    <div class="col pt-5" id="srch-area">
+        <input placeholder="Enter Something" type="text" id="inputName" class="form-control search">
+        <button type="button" onclick="check()" class="btn btn-primary mt-3">search</button>
+        <div class="container mt-5" id="card">
+            <h2 class="pt-2">Weather Details</h2>
+            <h3 class="pt-3" id="q">Country</h3>
+            <h4 id="country"></h4>
+            <h3 id="q">humidity</h3>
+            <h4 id="humidity"></h4>
+            <h3 id="q">Wind Speed</h3>
+            <h4 id="wind"></h4>
+            <h3 id="q">Pressure</h3>
+            <h4 class="pb-3" id="pressure"></h4>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
